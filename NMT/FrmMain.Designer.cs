@@ -271,6 +271,7 @@
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox1.SuspendLayout();
             this.grpbForceSensorDisplay.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -286,6 +287,7 @@
             this.tabPageNanoindentation.SuspendLayout();
             this.tabPageCompression.SuspendLayout();
             this.tabPageTension.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -501,6 +503,7 @@
             resources.ApplyResources(this.tabControl2, "tabControl2");
             this.tabControl2.Controls.Add(this.tabPage1);
             this.tabControl2.Controls.Add(this.tabPage2);
+            this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             // 
@@ -1342,7 +1345,6 @@
             this.tabPageNanoindentation.Controls.Add(this.label79);
             this.tabPageNanoindentation.Controls.Add(this.label80);
             this.tabPageNanoindentation.Controls.Add(this.txbIndentDeformation);
-            this.tabPageNanoindentation.Controls.Add(this.zgcIndentation);
             this.tabPageNanoindentation.Controls.Add(this.txbIndentWithdrawDisp);
             this.tabPageNanoindentation.Controls.Add(this.label100);
             this.tabPageNanoindentation.Controls.Add(this.label44);
@@ -1982,6 +1984,13 @@
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // tabPage3
+            // 
+            resources.ApplyResources(this.tabPage3, "tabPage3");
+            this.tabPage3.Controls.Add(this.zgcIndentation);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // FrmMain
             // 
             resources.ApplyResources(this, "$this");
@@ -2034,6 +2043,7 @@
             this.tabPageCompression.PerformLayout();
             this.tabPageTension.ResumeLayout(false);
             this.tabPageTension.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2282,6 +2292,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox ckbConvert;
         private System.Windows.Forms.Button bIndentPause;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }
 
