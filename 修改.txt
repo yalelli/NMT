@@ -1,0 +1,47 @@
+20210330：合并Indentation的Force Control和Displacement Control
+
+
+20210617：以下皆为“开机无Indent”版本
+
+
+20210730：以下皆为“以Sensor A方向为准”的版本
+
+
+20210731：将Indent Distance的判断改成以计算后的Distance为基数
+
+
+20210806：在“NTControl-CL-20210731-2-OK”的版本上修改
+
+
+20210826：修改Z轴的方向
+
+
+20210831：Current disp.改为记录原始值
+	  将Indent Distance的判断改成以计算后的Distance为基数
+
+
+20210901：添加Indent Type，Sample Deformation，Scanner Displacement，Force
+	  曲线显示，数据保存
+
+
+20210902：除DispUI外，其他所有判断及显示都不需要*iDirection_F和*iDirection_d，不区分SensorA和SensorC
+
+
+20220525-1：PID+原始+形变+ID+1延时
+20220525-3：Indent何时结束由传感器原始数据判断（原先由传感器计算数据判断）
+
+
+20220530：PID可调
+	 降CPU（注：死循环内添加Thread.Sleep，防止CPU占用太高）
+
+
+20220601：起始低电压，Indent过程：低电压->高电压->低电压
+
+
+20220630：增加Indent高频采样
+
+
+20220715：修改力传感器数据显示方式
+
+
+20221118：去掉Indent中途等待时的曲线显示
